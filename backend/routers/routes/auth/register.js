@@ -4,6 +4,6 @@ const { createNewUser } = require('./../../controllers/auth/register');
 
 const registerRouter = express.Router();
 
-registerRouter.post('/', createNewUser);
+registerRouter.post("/register", createNewUser);
 
 module.exports = registerRouter;
