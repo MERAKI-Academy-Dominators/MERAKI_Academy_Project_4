@@ -8,4 +8,4 @@ const hospitals = new mongoose.Schema({
     location: {type: String, required: true},
 });
 
-module.exports = mongoose.model("Hospitals", hospitals);
+module.exports = mongoose.model("Hospital", hospitals);
