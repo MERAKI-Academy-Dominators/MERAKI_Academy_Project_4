@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //app routers
-app.use("/register" , registerRouter)
+app.use(registerRouter)
 const PORT = process.env.PORT || 5000;
 app.use(PORT, () => {
 	console.log(`Server On ${PORT}`);
