@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
+
 const users = new mongoose.Schema({
 fullName: { type: String , required: true},
 image : { type: String },
@@ -21,6 +22,11 @@ users.pre('save', async function () {
 });
 
 module.exports = mongoose.model('User', users);
+
+
+
+
+
 
 
 
