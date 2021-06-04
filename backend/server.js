@@ -6,6 +6,8 @@ const app = express();
 
 //routers
 const registerRouter = require('./routers/routes/auth/register');
+// const confirmedCandidatesRouter = require('./routers/routes/auth/register');
+
 //built-in middlewares
 app.use(express.json());
 
