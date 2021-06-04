@@ -1,13 +1,13 @@
-const users = require("../../db/models/user");
-const request = require("../../db/models/requests");
+const Requests = require("../../db/models/requests");
 const candidates = require("../../db/models/candidate");
 
 const getConfirmedCandidates = (req, res) => {
-    const {reqId, userId} = req.body;
-    const request = candidates.find({reqId: reqId});
+    const reqID = req.params.id;
+    const request = Requests.find({_id: reqID});
+    const bloodTypeSection = request.populate("bloodType");
 
     candidates
-    .find({bloodType: user.populate("bloodType")})
+    .find({bloodType: bloodTypeSection.bloodType})
     .then((result) => {
         res.status(200);
         res.json(result);
