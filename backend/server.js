@@ -19,7 +19,8 @@ app.use("/login" , loginRouter)
 
 //app routers
 app.use(registerRouter)
+
 const PORT = process.env.PORT || 5000;
-app.use(PORT, () => {
-	console.log(`Server On ${PORT}`);
+app.listen(PORT, () => {
+    console.log(`Dominators server listening at http://localhost:${PORT}`);
 });
