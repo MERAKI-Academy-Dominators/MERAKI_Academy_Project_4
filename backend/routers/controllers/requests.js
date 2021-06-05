@@ -22,6 +22,51 @@ const getUserRequests = ( async  (req, res) => {
 
 
 
+const updateUserRequests = ( async  (req, res) => {
+  const {reqId , hospital , bloodType } = req.body;
+
+
+
+  Request
+  .findOneAndUpdate({_id:reqId} , {bloodType:bloodType , hospital:hospital }  , {new:true})
+  .then((result1) => {
+    res.json("update done")
+  })
+  .catch((err) => {
+    res.json(err);
+  });
+})
+
+
+
+const deleteUserRequests = ( async  (req, res) => {
+  const {reqId} = req.body;
+
+  
+  Request
+  .deleteOne({_id:reqId} )
+  .then((result1) => {
+    res.json({
+      "success" : true ,
+      "message" : `Success Delete request with id => ${reqId}`
+    })
+  })
+  .catch((err) => {
+    
+    res.status(404);
+    res.json("request not found");
+  });
+})
+
+
+
+
+
+
+
+
+
+
 const getMatchedRequests = (req,res) =>{
   let cond
   const bloodType = req.body.bloodType
@@ -74,12 +119,10 @@ const createRequest = async (req , res ,next)=> {
     candidates.push(elem._id)
   })*/
 
- const hospitalId = await Hospital.findOne({name:hospital})
- .then((result)=>{return(result._id)})
- .catch((err)=>{res.send(err)})
+ //use list value as hospitalId
  
   
- const request = new Request ({ userId , bloodType , hospitalId ,requestStatus})
+ const request = new Request ({ userId , bloodType , hospital ,requestStatus})
   
  request.save().then((result)=>{res.json(result)}).catch((err)=>{res.send(err)})
 
@@ -93,4 +136,4 @@ const createRequest = async (req , res ,next)=> {
 
 
   
-module.exports = {createRequest , getMatchedRequests, getUserRequests }
+module.exports = {createRequest , getMatchedRequests, getUserRequests , updateUserRequests , deleteUserRequests }
