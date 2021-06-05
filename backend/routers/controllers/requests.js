@@ -9,7 +9,7 @@ const User = require("./../../db/models/user")
 const getUserRequests = ( async  (req, res) => {
     const userId = req.body.userId;
     try{
-    const arrOfRequests = await Request.find({userId});
+    const arrOfRequests = await Request.find({userId}).populate("hospitalId" , "name -_id");
     res.status(200).json(arrOfRequests);
     } catch (err) {
         throw err;
@@ -61,7 +61,6 @@ const getMatchedRequests = (req,res) =>{
 
 
 const createRequest = async (req , res ,next)=> {
-    
   let requestStatus = true
   //const candidates = []
   
@@ -82,7 +81,7 @@ const createRequest = async (req , res ,next)=> {
   
  const request = new Request ({ userId , bloodType , hospitalId ,requestStatus})
   
- request.save().then((result)=>{next()}).catch((err)=>{res.send(err)})
+ request.save().then((result)=>{res.json(result)}).catch((err)=>{res.send(err)})
 
 }
 
