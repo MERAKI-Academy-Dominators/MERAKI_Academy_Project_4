@@ -10,6 +10,7 @@ const registerRouter = require('./routers/routes/auth/register');
 const loginRouter = require("./routers/routes/auth/login");
 const requestRouter = require("./routers/routes/requests");
 const hospitalRouter = require("./routers/routes/hospitals")
+const CandidatesRouter = require("./routers/routes/candidates")
 
 //built-in middlewares
 app.use(express.json());
@@ -24,6 +25,7 @@ app.use(registerRouter)
 app.use(loginRouter)
 app.use("/request" , requestRouter);
 app.use("/hospitals" , hospitalRouter);
+app.use("/" , CandidatesRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
