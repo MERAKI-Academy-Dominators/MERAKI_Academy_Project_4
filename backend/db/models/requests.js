@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const requests = new mongoose.schema({
+const requests = new mongoose.Schema({
     userId: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
-    date: {type: Date.now},
+    date: {type: Date, default: Date.now},
     bloodType: {type: String, required: true},
     hospital: {type: mongoose.Schema.Types.ObjectId, ref: "Hospital"},
     requestStatus: {type: Boolean},
