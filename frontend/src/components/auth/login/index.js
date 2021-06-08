@@ -4,8 +4,14 @@ import { Route } from "react-router-dom";
 
 function Login(){
 const[email,setEmail]=useState()
-const[massage,setMassage]=useState()
+const[message,setMessage]=useState()
 const[password,setPassword]=useState()
+
+const storedInfo = ()=>{
+    axios.post("http://localhost:5000/login/email" , {email:email} ).then((result)=>{ {localStorage.setItem("user" , JSON.stringify(result.data))}})
+}
+
+//JSON.parse(window.localStorage.getItem('user'));
 
 
 const login = ()=>{
@@ -49,10 +55,10 @@ return(<div className="register">
         <input className="sections" type="password" placeholder={`password here`}  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
  
-<button className="register_button section" onClick={login}>
+<button className="register_button section" onClick={()=> {login() ; storedInfo()} }>
     Login
 </button>
-{massage}
+{message}
 
 </div>)
 }
