@@ -22,7 +22,7 @@ app.use(cors());
 
 //app routers
 app.use(registerRouter)
-app.use(loginRouter)
+app.use("/login" , loginRouter)
 app.use("/request" , requestRouter);
 app.use("/hospitals" , hospitalRouter);
 app.use("/" , CandidatesRouter);
