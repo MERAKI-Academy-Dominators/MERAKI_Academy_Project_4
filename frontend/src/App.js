@@ -1,8 +1,11 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+// import RequestForm from "./components/request form/request_form";
 
 const App = () => {
-	return <div className="App">App component</div>;
+	return <>
+		{/* <Route exact path="/request/create" component={RequestForm}/> */}
+	</>
 };
 
 export default App;
