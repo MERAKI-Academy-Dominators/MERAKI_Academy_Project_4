@@ -110,46 +110,50 @@ const createRequest = async (req , res ,next)=> {
   
  const { userId , bloodType , hospital} = req.body ;
 
+ const hospitalId = await Hospital.findOne({name:hospital})
+ .then((result)=>{return(result._id)})
+ .catch((err)=>{res.send(err)})
+
 
  //use list value as hospitalId
  let cond;
  if(bloodType == "A+"){
   cond = { $or: [ { bloodType:  "A+"  }, { bloodType:  "A-"} , { bloodType:  "O-"  }, { bloodType:  "O+"}]}
-}else if (bloodType == "O+"){
+ }else if (bloodType == "O+"){
   cond = { $or: [ { bloodType:  "O-"  }, { bloodType:  "O+"}] }
-}else if (bloodType == "B+"){
+ }else if (bloodType == "B+"){
   cond = { $or: [ { bloodType:  "B+"  }, { bloodType:  "B-"} , { bloodType:  "O+"  }, { bloodType:  "O-"}] }
-}else if (bloodType == "AB+"){
+ }else if (bloodType == "AB+"){
   cond = { $or: [ { bloodType:  "A+"  }, { bloodType:  "AB+"} , { bloodType:  "A-"  }, { bloodType:  "AB-"} , { bloodType:  "B+"  }, { bloodType:  "B-"} , { bloodType:  "O-"  }, { bloodType:  "O+"}] }
-}else if (bloodType == "A-"){
+ }else if (bloodType == "A-"){
   cond = { $or: [ { bloodType:  "A-"  }, { bloodType:  "O-"} ] }
-}else if (bloodType == "O-"){
+ }else if (bloodType == "O-"){
   cond = {bloodType:  "O-"}
-}else if (bloodType == "B-"){
+ }else if (bloodType == "B-"){
   cond = { $or: [ { bloodType:  "B-"  }, { bloodType:  "O-"  }] }
-}else if (bloodType == "AB-"){
+ }else if (bloodType == "AB-"){
   cond = { $or: [ { bloodType:  "AB-"  }, { bloodType:  "A-"}, { bloodType:  "B-"}, { bloodType:  "O-"}   ] }
-}
+ }
 
-const candidatesUsers = await User.find(cond).then((result)=>{return result}).catch((err)=>{res.send(err)})
+ const candidatesUsers = await User.find(cond).then((result)=>{return result}).catch((err)=>{res.send(err)})
 
-const candidatesArray = candidatesUsers.map((element)=>{
+ const candidatesArray = candidatesUsers.map((element)=>{
   return {userId : element._id , confirmedStatus : false};
-})
-console.log(candidatesArray)
-const request = new Request ({ userId , bloodType , hospital ,requestStatus})
+ })
+ console.log(candidatesArray)
+ const request = new Request ({ userId , bloodType , hospitalId ,requestStatus})
   
-const newRequest = await request.save()
-.then((result)=>{
+ const newRequest = await request.save()
+ .then((result)=>{
   res.json(result);
   return result
  })
   .catch((err)=>{res.send(err)})
 
-const candidates = await new Candidate ({ reqId : newRequest._id, users : candidatesArray });
+ const candidates = await new Candidate ({ reqId : newRequest._id, users : candidatesArray });
 
-const newCandidates = await candidates.save()
-.then((result)=>{
+ const newCandidates = await candidates.save()
+ .then((result)=>{
   return result
  })
   .catch((err)=>{res.send(err)});
