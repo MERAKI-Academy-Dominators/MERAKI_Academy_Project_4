@@ -23,22 +23,24 @@ const login = ()=>{
 
     console.log(res.data);
 
-    if (res.data.email && res.data.password  ) {
-      setMassage(
+    if (res.status == 200) {
+        localStorage.setItem("user" , JSON.stringify(res.data))
+      setMessage(
        `login successfully`
       );
   } 
 })
      
         .catch((err) =>{
-        console.log(err.response);
+        
           
         if(err.response.status==404){
-            setMassage(
+            
+            setMessage(
                 `The email you've entered is incorrect`
             );
         }else{
-            setMassage(
+            setMessage(
                 `The password you've entered is incorrect`
             );
         }
@@ -55,7 +57,7 @@ return(<div className="register">
         <input className="sections" type="password" placeholder={`password here`}  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
  
-<button className="register_button section" onClick={()=> {login() ; storedInfo()} }>
+<button className="register_button section" onClick={login}>
     Login
 </button>
 {message}

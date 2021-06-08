@@ -11,10 +11,12 @@ const login = async (req , res , next) =>{
     if (authEmail){
         const comparePass = await bcrypt.compare(loginPassword,authEmail.password)
         if(comparePass){
-            res.json({email : true , password : true}).status(200)
+            res.json({fullName:authEmail.fullName ,image:authEmail.image , email:authEmail.email 
+                ,phoneNumber:authEmail.phoneNumber,bloodType:authEmail.bloodType,address:authEmail.address , _id :authEmail._id  }  ).status(200)
 
         }else{
             res.status(403);
+    
             res.json({email : true , password : false})
 
         } } else{
