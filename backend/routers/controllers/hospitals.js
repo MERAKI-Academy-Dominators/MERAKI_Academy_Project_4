@@ -12,13 +12,9 @@ const addHospital = (req,res)=>{
 
 
 const getAllHospitals = async (req,res)=>{
-    const hospArr = []
     try{
-    const hospitalNames = await Hospital.find({},"name -_id")
-    hospitalNames.forEach( (elem)=>{
-     hospArr.push(elem.name)    
-    })
-    res.json(hospArr)
+    const hospitals = await Hospital.find({})
+    res.json(hospitals)
     }catch(err){
         throw err
     }
