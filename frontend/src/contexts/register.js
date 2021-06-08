@@ -13,6 +13,8 @@ const RegisterProvider = (props) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [image, setImage] = useState("");
   const [location, setLocation] = useState("");
+  const [userSucc, setUserSucc] = useState(false);
+  const [userFail, setUserFail] = useState(false)
   
   
 
@@ -27,30 +29,32 @@ const RegisterProvider = (props) => {
     setImage,
     setLocation,
     addNewUser,
+     userSucc,
+     userFail,
   };
 
   async function addNewUser() {
-      console.log(fullName);
-    try {
-      await axios.post("http://localhost:5000/register", {
-        fullName,
-        age,
-        bloodType,
-        address,
-        email,
-        password,
-        phoneNumber,
-        image,
-        location
-      }).then((result) =>{
-          console.log(result.data);
-      })
-
-      console.log("The user has been created successfully");
-    } catch (error) {
-      console.log("Error happened while register, please try again");
-    }
-  }
+		axios.post('http://localhost:5000/register', {
+				fullName,
+                email,
+                password,
+                age,
+                address,
+                phoneNumber,
+                bloodType,
+                location
+			}).then((response) => {
+                if(response.statusText == "Created"){
+                    console.log(response)
+                setUserSucc(true);}else{
+                    setUserFail(true)
+    
+                }
+                
+            }).catch( (err)=>{
+                setUserFail(true)
+            })
+	}
 
   return (
     <RegisterContext.Provider value={state}>
