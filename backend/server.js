@@ -25,7 +25,7 @@ app.use(registerRouter)
 app.use("/login" , loginRouter)
 app.use("/request" , requestRouter);
 app.use("/hospitals" , hospitalRouter);
-app.use("/" , CandidatesRouter);
+app.use("/candidates" , CandidatesRouter);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
