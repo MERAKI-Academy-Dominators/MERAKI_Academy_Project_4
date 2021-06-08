@@ -23,5 +23,19 @@ const login = async (req , res , next) =>{
 
         }
 }
-module.exports = {login}
+
+
+
+const loginEmail = async (req, res)=>{
+    let loginEmail = req.body.email
+    loginEmail = loginEmail.toLowerCase()
+    const authEmail = await User.findOne({ email : loginEmail}).then((result)=>{res.json(result)})
+  
+}
+
+
+
+
+
+module.exports = {login , loginEmail }
 

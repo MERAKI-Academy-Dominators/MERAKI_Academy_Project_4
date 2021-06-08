@@ -14,7 +14,7 @@ const addHospital = (req,res)=>{
 const getAllHospitals = async (req,res)=>{
     const hospArr = []
     try{
-    const hospitalNames = await Hospital.find({},"name -_id")
+    const hospitalNames = await Hospital.find({},"name")
     hospitalNames.forEach( (elem)=>{
      hospArr.push(elem.name)    
     })
