@@ -23,7 +23,7 @@ const Register = () => {
 					onChange={(e) => registerContext.setBloodType(e.target.value)}
 				/>
 				<input
-					type="text"
+					type="number"
 					placeholder="age here"
 					onChange={(e) => registerContext.setAge(e.target.value)}
 				/>
@@ -59,6 +59,9 @@ const Register = () => {
 				/>
 				<button onClick={handleSubmit}>Register</button>
 			</form>
+                        {registerContext.userSucc ? <div id="usercreated"><h4 id="h3reg">The user has been created successfully</h4></div> : ""}
+                        {registerContext.userFail ? <div id="userfail"><h4 id="h4reg">Error happened while register, please try again</h4>
+                         </div> : ""}
 
 			
 		</>
