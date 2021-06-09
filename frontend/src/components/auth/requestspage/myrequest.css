@@ -1,0 +1,54 @@
+#MyRequset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+
+#MyOneReq{
+    background-color: aqua;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    
+}
+
+#blood{
+    position: absolute;
+    top: 0;
+    left : 10px ;
+
+}
+
+#hosp{
+    position: absolute;
+    top: 0;
+    left : 70px ;
+}
+
+#mydate{
+    position: absolute;
+    top: 0;
+    left : 250px ;
+}
+
+#candidates{
+    position: absolute;
+    top:80px;
+    left : 320px ;
+}
+
+
+#update{
+    position: absolute;
+    top:80px;
+    left : 265px ;
+}
+
+
+#delete{
+    position: absolute;
+    top:80px;
+    left : 215px ;
+}
