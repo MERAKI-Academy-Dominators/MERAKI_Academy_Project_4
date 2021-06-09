@@ -8,36 +8,36 @@ export default function BloodTypesPage() {
         <h3>
           How much of the donor population does each blood type represent?
         </h3>
-        <p>
+        <ul>
           There are eight main blood types but some are rarer than others. The
           list below shows the percentage of donors with each blood type:
-          <p>
+          <li>
             O positive makes about 35% of donors, making it the most common
             blood type
-          </p>
-          <p>
+          </li>
+          <li>
             O negative makes about 13% of donors. Donors with this blood type
             are often called 'universal donors'
-          </p>
-          <p>
+          </li>
+          <li>
             A positive makes about 30% of donors, making it the second most
             common blood type
-          </p>
-          <p>
+          </li>
+          <li>
             A negative makes about 8% of donors. It's the universal platelet
             type
-          </p>
-          <p>B positive makes about 8% of donors</p>
-          <p>
+          </li>
+          <li>B positive makes about 8% of donors</li>
+          <li>
             B negative makes about 2% of donors, making one of the rarest blood
             types
-          </p>
-          <p>AB positive makes about 2% of donors</p>
-          <p>
+          </li>
+          <li>AB positive makes about 2% of donors</li>
+          <li>
             AB negative makes about 1% of donors. It's the rarest of the 8 main
             blood types
-          </p>
-        </p>
+          </li>
+        </ul>
         <br />
 
         <h3>Which blood types are compatible?</h3>
