@@ -26,7 +26,7 @@ const updateUserRequests = ( async  (req, res) => {
   const {reqId , hospital , bloodType } = req.body;
 
 
-
+ 
   Request
   .findOneAndUpdate({_id:reqId} , {bloodType:bloodType , hospital:hospital }  , {new:true})
   .then((result1) => {
@@ -145,7 +145,7 @@ const createRequest = async (req , res ,next)=> {
   
  const newRequest = await request.save()
  .then((result)=>{
-  res.json(result);
+  // res.json(result);
   return result
  })
   .catch((err)=>{res.send(err)})

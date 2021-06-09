@@ -17,13 +17,13 @@ const login = async (req , res , next) =>{
         }else{
             res.status(403);
     
-            res.json({email : true , password : false})
+            res.json({email : true , password : false })
 
         } } else{
             res.status(404);
             res.json({email : false , password : true})
 
-        }
+        } 
 }
 
 

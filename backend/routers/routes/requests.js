@@ -6,7 +6,7 @@ const requestRouter = express.Router()
 
 requestRouter.post("/create" , createRequest )
 requestRouter.get("/matched" , getMatchedRequests )
-requestRouter.get("/myRequests" , getUserRequests )
+requestRouter.post("/myRequests" , getUserRequests )
 requestRouter.put("/update" , updateUserRequests )
 requestRouter.delete("/delete" , deleteUserRequests )
 
