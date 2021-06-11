@@ -3,7 +3,7 @@ const { getConfirmedCandidates, getRequestCandidates } = require("./../controlle
 
 const CandidatesRouter = express.Router()
 
-CandidatesRouter.get("/getconfirmed" , getConfirmedCandidates );
-CandidatesRouter.get("/getrequestcandidates" , getRequestCandidates);
+CandidatesRouter.post("/getconfirmed" , getConfirmedCandidates );
+CandidatesRouter.post("/getrequestcandidates" , getRequestCandidates);
 
 module.exports= CandidatesRouter
