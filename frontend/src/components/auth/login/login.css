@@ -1,0 +1,55 @@
+.register{
+    display: flex;
+    position: relative;
+}
+.form{
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+.h1 {
+    text-align: center;
+    color: black;
+    font-family: "Mukta", sans-serif;
+    text-shadow: 1px 1px #8e8e8e;
+  }
+.inputs {
+    width: 256px;
+    height: 25px;
+    margin: 10px;
+    background-color: #fafafa;
+    border-radius: 2px;
+  }
+   .form{
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+.h1 {
+    text-align: center;
+    color: black;
+    font-family: "Mukta", sans-serif;
+    text-shadow: 1px 1px #8e8e8e;
+  }
+  .inputs {
+    width: 256px;
+    height: 25px;
+    margin: 10px;
+    background-color: #fafafa;
+    border-radius: 2px;
+  }
+  .signUp {
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #e11e25;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .signUp:hover {
+    opacity: 1;
+  }
