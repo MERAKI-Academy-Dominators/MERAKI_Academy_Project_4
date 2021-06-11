@@ -1,5 +1,5 @@
 import React from "react";
-import "./donation_process_style.css"
+import "./donation_process_style.css";
 
 export default function BeforeBloodDonationPage() {
   return (
