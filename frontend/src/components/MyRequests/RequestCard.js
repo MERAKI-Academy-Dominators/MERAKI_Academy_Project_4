@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./MyRequest.css";
 import axios from "axios";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import Button from '@material-ui/core/Button';
+
+
 const RequestCard = ({
   hospital,
   date,
@@ -41,13 +42,13 @@ const RequestCard = ({
   };
 
   return (
-    <Grid container spacing= '4' justify='center'>
-      <Grid item>
-        <Paper id="RequestCard">
+    
+     
+       <div id = "RequestCard">
           <h3 id="blood">{bloodType}</h3>
           <h3 id="hosp">{hospital}</h3>
           <h3 id="mydate">{date}</h3>
-          <button
+          <button variant="contained" color="red"
             onClick={() => {
               getConCandidates();
             }}
@@ -55,12 +56,11 @@ const RequestCard = ({
           >
             candidates
           </button>
-          <button onClick={deleteRequest} id="delete">
+          <button   onClick={deleteRequest} id="delete">
             delete
           </button>
-        </Paper>
-      </Grid>
-    </Grid>
+          </div>
+      
   );
 };
 

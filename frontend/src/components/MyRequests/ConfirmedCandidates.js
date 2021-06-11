@@ -11,17 +11,15 @@ const ConfirmedCandidates = ({
   setHideCandidates,
 }) => {
   return (
-    <Grid spacing= '3' justify='center' container>
-		<Grid item>
+   <div id="MyRequset3">
       <div className="ConCandidates">
         <div id="candidate">
-          <h2 id="fullName"> {fullName}</h2>
-          <h2 id="bloodType"> {bloodType}</h2>
-          <h3 id="phoneNumber"> {phoneNumber}</h3>
+          <h2 id="fullName1"> {fullName}</h2>
+          <h2 id="bloodType1"> {bloodType}</h2>
+          <h3 id="phoneNumber1"> {phoneNumber}</h3>
         </div>
       </div>
-	  </Grid>
-    </Grid>
+      </div>
   );
 };
 

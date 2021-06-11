@@ -3,7 +3,11 @@ import ConfirmedCandidates from "./ConfirmedCandidates"
 import axios from 'axios'
 import React,{useState , useEffect} from 'react'
 import "./MyRequest.css"
-import Container from '@material-ui/core/Container'
+import Button from '@material-ui/core/Button';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+
+
 
 const MyRequest = () => {
 
@@ -38,7 +42,7 @@ const MyRequest = () => {
 
     return (
         <div id = "MyRequset">
-            <Container maxWidth = 'xs'>
+            
 
         {hideCandidates&&myRequests ? myRequests.map((elem,i)=>{
             return <RequestCard setHideCandidates = {setHideCandidates} conCandidates = {conCandidates} setConCandidates={setConCandidates} key={i} myRequests= {myRequests} reqId={elem._id}  bloodType = {elem.bloodType}   hospital={elem.hospitalId.name} date={elem.date}/>}):null}
@@ -47,9 +51,18 @@ const MyRequest = () => {
             return <ConfirmedCandidates setHideCandidates = {setHideCandidates} setConCandidates={setConCandidates}  fullName = {elem.fullName} phoneNumber={elem.phoneNumber} key={i} bloodType= {elem.bloodType} />}):null}
             
 
-            {conCandidates &&  <button onClick= {()=>{setConCandidates(false);setHideCandidates(true) }}>Back</button> }
-            </Container>
+            {conCandidates &&  <button id="conBack" onClick= {()=>{setConCandidates(false);setHideCandidates(true) }}>Back</button> }
+
+
+          
+
+           
          </div>
+
+         
+
+
+
 
         
 

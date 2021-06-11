@@ -1,34 +1,36 @@
-#MyRequset{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#MyRequset3{
+    display: grid;
+  grid-template-columns: 430px 430px 430px ;
+  grid-template-rows: 125px 125px 125px ;
+  gap: 10px;
     
 }
 
 
 .ConCandidates{
-    background-color: aqua;
-    height: 100px;
-    width: 400px;
+    background-color: rgb(245, 49, 65);
+    height: 110px;
+    width: 420px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
 }
 
-#fullName{
+#fullName1{
     position: absolute;
     top: 0;
     left : 10px ;
 
 }
 
-#bloodType{
+#bloodType1{
     position: absolute;
-    top: 0;
-    left : 70px ;
+    top: 50px;
+    left : 60px ;
 }
 
-#phoneNumber{
+#phoneNumber1{
     position: absolute;
     top: 0;
-    left : 250px ;
+    left : 275px ;
 }
