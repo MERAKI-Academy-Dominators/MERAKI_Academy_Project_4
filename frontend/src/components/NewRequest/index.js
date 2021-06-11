@@ -1,6 +1,9 @@
 import React,{useState , useEffect }  from 'react';
 import axios from "axios";
-
+import "./NewRequest.css"
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import Button from '@material-ui/core/Button';
 
 
 
@@ -46,7 +49,9 @@ function NewRequest ({hospitals}) {
         
         
     }
-   
+
+    
+    
     
 
    
@@ -54,36 +59,52 @@ function NewRequest ({hospitals}) {
     return (
         <div>
 
-        <select onChange={funBloodtype} id="bloodtype">
-        <option value="A+">A+</option>
-        <option value="A-">A-</option>
-        <option value="AB+">AB+</option>
-        <option value="AB-">AB-</option>
-        <option value="B+">B+</option>
-        <option value="B-">B-</option>
-        <option value="O+">O+</option>
-        <option value="O-">O-</option>
+
+     
+        <Select value="" displayEmpty
+            onChange={funBloodtype}  >
+         <MenuItem value="">Blood Type</MenuItem>       
+         <MenuItem value="A+">A+</MenuItem>
+         <MenuItem value="A-">A-</MenuItem>
+         <MenuItem value="AB+">AB+</MenuItem>
+         <MenuItem value="AB-">AB-</MenuItem>
+         <MenuItem value="B+">B+</MenuItem>
+         <MenuItem value="B-">B-</MenuItem>
+         <MenuItem value="O+">O+</MenuItem>
+         <MenuItem value="O-">O-</MenuItem>
+        </Select>
+
+
         
-        </select>
+       
+
+
+
+
+
+       
+       
         
 
 
-        <select onChange={hospitalPicked} name="Blood Type" id="bloodtype">
+
+        <Select  value="" displayEmpty onChange={hospitalPicked}  >
+        <MenuItem value="">Hospital</MenuItem> 
         {hospitals? hospitals.map((elem,i)=>{
-            return <option key={i} value={elem}>{elem}</option> }) : null
+            return <MenuItem key={i} value={elem}>{elem}</MenuItem> }) : null
         }
 
 
 
 
-        </select>
+        </Select>
 
-        <button onClick={createRequest}>Request</button>
+        <Button onClick={createRequest}>Request</Button>
 
        {created? <p>Created Successfully</p> : null }
 
         
-        
+       
 
 
         </div>

@@ -13,24 +13,25 @@
 
 
 #OneReq{
-    background-color: aqua;
+    background-color: rgb(245, 49, 65);
     height: 200px;
     width: 300px;
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-#fullName{
+#fullname{
     position: absolute;
     margin: 0;
     top:10px;
     left: 10px;
 }
 
-#bloodType{
+#bloodtype{
     position: absolute;
     margin: 0;
     top:10px;
-    left: 210px;
+    left: 250px;
 }
 
 #hospital{
@@ -63,15 +64,31 @@
 
 #conf{
     position: absolute;
-    margin: 0;
-    top:179px;
-    left: 240px;
+    top:170px;
+    left: 225px;
+    background-color: #7e0d0d; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid rgb(190, 17, 17);
 }
 
 
 #dec{
     position: absolute;
-    margin: 0;
-    top:179px;
-    left: 180px;
+    top:170px;
+    left: 155px;
+    background-color: #7e0d0d; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid rgb(190, 17, 17);
 }

@@ -19,11 +19,11 @@ function OneReq({fullName , hospital , phone ,date, location , bloodType, reqId,
 
     }
     return (
-        <Grid spacing= '3' justify='center' container>
+        
             
-        <Grid item id = "OneReq">
-            <h2 id="fullName">{fullName}</h2>
-            <h2 id="bloodType">{bloodType}</h2>
+        <div id="OneReq">
+            <h2 id="fullname">{fullName}</h2>
+            <h2 id="bloodtype">{bloodType}</h2>
             <h3 id="hospital">{hospital}</h3>
             <h3 id="phone">{phone}</h3>
             <h3 id="location">{location}</h3>
@@ -33,8 +33,7 @@ function OneReq({fullName , hospital , phone ,date, location , bloodType, reqId,
             
 
 
-            </Grid> 
-        </Grid>
+        </div>
     )
 }
 
