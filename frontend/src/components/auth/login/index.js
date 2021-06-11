@@ -1,11 +1,15 @@
 import React,{useState} from 'react';
+import {BrowserRouter as Router , Route, Link, Redirect}  from 'react-router-dom';
+import TextField from '@material-ui/core/TextField'
 import axios from "axios";
-import { Route } from "react-router-dom";
+
 
 function Login(){
 const[email,setEmail]=useState()
 const[message,setMessage]=useState()
 const[password,setPassword]=useState()
+const[toProfile,settoProfile]=useState(false)
+
 
 const storedInfo = ()=>{
     axios.post("http://localhost:5000/login/email" , {email:email} ).then((result)=>{ {localStorage.setItem("user" , JSON.stringify(result.data))}})
@@ -28,6 +32,7 @@ const login = ()=>{
       setMessage(
        `login successfully`
       );
+      settoProfile(true)
   } 
 })
      
@@ -50,18 +55,20 @@ const login = ()=>{
           })}
 
 
-return(<div className="register">
+return(
+    <div className="register">
     <p>Login:</p>
-    <input className="sections" type="text" placeholder={`email here`}  onChange={(a)=>{setEmail(a.target.value)}}/>
+    <TextField className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
         <br/>
-        <input className="sections" type="password" placeholder={`password here`}  onChange={(a)=>{setPassword(a.target.value)}}/>
+    <TextField className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
  
 <button className="register_button section" onClick={login}>
     Login
 </button>
 {message}
-
+<h1>You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
+{toProfile?<Redirect to= '/Profile'></Redirect> :null }
 </div>)
 }
 

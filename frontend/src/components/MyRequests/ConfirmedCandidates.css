@@ -1,0 +1,34 @@
+#MyRequset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+
+.ConCandidates{
+    background-color: aqua;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    
+}
+
+#fullName{
+    position: absolute;
+    top: 0;
+    left : 10px ;
+
+}
+
+#bloodType{
+    position: absolute;
+    top: 0;
+    left : 70px ;
+}
+
+#phoneNumber{
+    position: absolute;
+    top: 0;
+    left : 250px ;
+}
