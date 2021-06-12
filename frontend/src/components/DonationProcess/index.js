@@ -8,23 +8,15 @@ export default function DonationProcess() {
   return (
     <div>
       <br />
+      <br />
+      <br />
       <h1>Donation process</h1>
       <br />
-      <Route
-        exact
-        path="/DonationProcess/BeforeBloodDonation"
-        component={BeforeBloodDonationPage}
-      />
-      <Route
-        exact
-        path="/DonationProcess/DuringBloodDonation"
-        component={DuringBloodDonationPage}
-      />
-      <Route
-        exact
-        path="/DonationProcess/AfterBloodDonation"
-        component={AfterBloodDonationPage}
-      />
+      <BeforeBloodDonationPage/>
+      <hr/>
+      <DuringBloodDonationPage/>
+      <hr/>
+      <AfterBloodDonationPage/>
     </div>
   );
 }

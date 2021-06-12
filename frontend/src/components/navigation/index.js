@@ -5,32 +5,46 @@ import { ButtonGroup } from "@material-ui/core";
 import AppBar from '@material-ui/core/AppBar'
 import ToolBar from '@material-ui/core/ToolBar'
 import IconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/core/Menu'
+import {TextField, Select ,MenuItem} from "@material-ui/core";
+import "fontsource-roboto";
 
-function Navigation({ showLogIn }) {
+function Navigation() {
   return (
 	  <>
 	 
-  
+   <AppBar className='AppBar' color='secondary'>
 		<ToolBar>
-	  <Link to="/">
-          <IconButton variant="contained" color="secondary">
+	  <Link style={{textDecoration: 'none'}} to="/">
+          <Button variant="contained"  size='medium'>
             Home
-          </IconButton>
+          </Button>
         </Link>
-		<IconButton variant="contained" color="secondary">
-          Why give bood
-        </IconButton>
-        <IconButton variant="contained" color="secondary">
+
+        <Link style={{textDecoration: 'none'}} to="/WhyGiveBlood">
+          <Button variant="contained"  size='medium'>
+            Why Give Blood
+          </Button>
+        </Link>
+		
+        
+        <Link to="/WhoCanGiveBlood" style={{textDecoration: 'none'}}>
+        <Button variant="contained"  size='medium' >
           Who can give blood
-        </IconButton>
-        <IconButton variant="contained" color="secondary">
+        </Button>
+        </Link>
+        <Link to="/DonationProcess" style={{textDecoration: 'none'}}> 
+        <Button variant="contained"  size='medium' >
           The Donation Proccess
-        </IconButton>
-        <IconButton variant="contained" color="secondary">
+        </Button>
+        </Link>
+        <Link to="/About" style={{textDecoration: 'none'}}>
+        <Button variant="contained"  size='medium' >
           About us
-        </IconButton>
+        </Button>
+        </Link>
 			</ToolBar>
-				
+      </AppBar>	
 
 	</>
   );

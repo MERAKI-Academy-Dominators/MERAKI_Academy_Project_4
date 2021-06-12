@@ -10,16 +10,17 @@
 }
 
 
-#RequestCard{
+#RequestCard5{
     background-color: rgb(245, 49, 65);
     height: 110px;
     width: 420px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: medium;
     
 }
 
-#blood{
+#blood5{
     position: absolute;
     top: 20px;
     left : 10px ;
@@ -27,14 +28,14 @@
 
 }
 
-#hosp{
+#hosp5{
     position: absolute;
     top: 20px;
     left : 70px ;
     color: white;
 }
 
-#mydate{
+#mydate5{
     position: absolute;
     top: 5px;
     left : 225px ;

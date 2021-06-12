@@ -72,17 +72,17 @@ const Register = () => {
           label="Location"
           onChange={(e) => registerContext.setLocation(e.target.value)}
         />
-		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+		
+		
 		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
         <Select
+        value='' displayEmpty
           className="inputs"
           variant="filled"
           type="text"
-         label="Blood Type"
           onChange={(e) => registerContext.setBloodType(e.target.value)}
         >
-			
+			 <MenuItem value="">Choose    Blood    Type</MenuItem>
 		   <MenuItem value="AB+">AB+</MenuItem>
 		   <MenuItem value="AB-">AB-</MenuItem>
 		   <MenuItem value="A+">A+</MenuItem>
