@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
+import WhenCanIGiveBloodPage from "./who_can_give_blood_page";
 
-const Header = () => {
-	return <div className="App">Header component</div>;
-};
-
-export default Header;
+export default function GivingInfo() {
+    return (
+        <>
+        <WhenCanIGiveBloodPage />
+        </>
+    )
+}

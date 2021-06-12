@@ -1,0 +1,41 @@
+span {
+  font-weight: bolder;
+  color: rgb(177, 19, 19);
+}
+
+h1 {
+  color: black;
+  font-size: xx-large;
+}
+
+h2 {
+  color: rgb(177, 19, 19);
+  font-size: x-large;
+}
+
+p {
+  text-align: justify;
+  font-size: large;
+}
+
+ul {
+  text-align: justify;
+  font-size: large;
+  list-style-type: circle;
+}
+
+li {
+  text-align: justify;
+  font-size: large;
+}
+
+#donationCriteria {
+  color: rgb(177, 19, 19);
+  text-decoration: none;
+}
+
+.BloodDonation {
+  text-align: left;
+  padding-right: 50px;
+  padding-left: 50px;
+}
