@@ -3,9 +3,9 @@ import { Route, Link, useParams, useHistory, Switch} from 'react-router-dom';
 import './App.css';
 import 'fontsource-roboto';
 import Navigation from './components/navigation/index'
-import Header from './components/header/index';
+import Header from './components/Header/index';
 import Body from './components/Body/index';
-import Footer from './components/footer/index';
+import Footer from './components/Footer/index';
 import Register from './components/auth/signUp/index';
 import Login from './components/auth/login/index';
 import ReasonsInfo from './components/ReasonsInfo/index';
