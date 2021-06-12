@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import {BrowserRouter as Router , Route, Link, Redirect}  from 'react-router-dom';
 import TextField from '@material-ui/core/TextField'
 import axios from "axios";
+import login from './login.css'
 
 
 function Login(){
@@ -56,18 +57,22 @@ const login = ()=>{
 
 
 return(
-    <div className="register">
+    <div className="h1">
+    <div className="form">
     <p>Login:</p>
     <TextField className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
         <br/>
     <TextField className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
- 
-<button className="register_button section" onClick={login}>
+   
+
+
+<button className="signUp" onClick={login}>
     Login
 </button>
 {message}
-<h1>You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
+</div>
+<h1 className = "doYou">You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
 {toProfile?<Redirect to= '/Profile'></Redirect> :null }
 </div>)
 }
