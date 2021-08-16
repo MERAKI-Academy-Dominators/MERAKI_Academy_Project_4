@@ -1,7 +1,16 @@
 import React from 'react';
+import How from './How'
+import Demand from './Demand'
 
-const Header = () => {
-	return <div className="App">Header component</div>;
+const ReasonsInfo = () => {
+	return (
+		<div>
+			<How/>
+			<hr/>
+			<Demand/>
+		</div>
+	)
+	
 };
 
-export default Header;
+export default ReasonsInfo;
