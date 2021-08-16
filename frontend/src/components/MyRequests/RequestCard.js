@@ -44,10 +44,10 @@ const RequestCard = ({
   return (
     
      
-       <div id = "RequestCard">
-          <h3 id="blood">{bloodType}</h3>
-          <h3 id="hosp">{hospital}</h3>
-          <h3 id="mydate">{date}</h3>
+       <div id = "RequestCard5">
+          <h3 id="blood5">{bloodType}</h3>
+          <h3 id="hosp5">{hospital}</h3>
+          <h3 id="mydate5">{date}</h3>
           <button variant="contained" color="red"
             onClick={() => {
               getConCandidates();

@@ -18,6 +18,8 @@
     width: 300px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: medium;
+    color: white
 }
 
 #fullname{
@@ -25,6 +27,7 @@
     margin: 0;
     top:10px;
     left: 10px;
+    color: black
 }
 
 #bloodtype{
@@ -32,6 +35,7 @@
     margin: 0;
     top:10px;
     left: 250px;
+    color:black
 }
 
 #hospital{

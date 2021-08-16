@@ -18,6 +18,7 @@ import About from './components/About/index';
 function App() {
 
 	return <div className="App">
+		
 		<Header/>
 		<Navigation />
 		<Switch>
@@ -30,7 +31,7 @@ function App() {
 		<Route path= "/Profile" render={()=> <Profile/>}/> {/*React */}
 		<Route path= "/About" render={()=> <About/>}/> {/*React Paragraph*/}
 		</Switch>
-		<Footer/>
+		
 	</div>;
 };
 
