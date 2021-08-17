@@ -13,24 +13,27 @@
     width: 420px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    
+    font-size: medium;
 }
 
 #fullName1{
     position: absolute;
     top: 0;
     left : 10px ;
+    color:black;
 
 }
 
 #bloodType1{
     position: absolute;
     top: 50px;
-    left : 60px ;
+    left : 30px ;
+    color:black;
 }
 
 #phoneNumber1{
     position: absolute;
     top: 0;
     left : 275px ;
+    color: black;
 }

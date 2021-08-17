@@ -7,13 +7,6 @@ const How = () => {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <h2>How blood is used</h2>
         <h5>Blood or the components of blood are used to treat patients with medical conditions such as anaemia, <br/> cancer blood disorders, and those having surgery.</h5>
         <br/>

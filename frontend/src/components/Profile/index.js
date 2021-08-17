@@ -13,6 +13,7 @@ import ToolBar from '@material-ui/core/ToolBar'
 import MenuIcon from '@material-ui/core/Menu'
 import { ButtonGroup } from '@material-ui/core';
 import "./../MyRequests/MyRequest.css"
+import Avatar from '@material-ui/core/Avatar';
 
 
 const Profile = () => {
@@ -32,21 +33,21 @@ const Profile = () => {
 	
 		<div id = "profileNavigation">
 		
-	   <Link to = '/Profile/edit'><button  className = "profileButton">Edit Profile</button></Link>
+	   <Link style={{textDecoration: 'none'}} to = '/Profile/edit'><Button  variant='contained' className = "profileButton">Edit Profile</Button></Link>
 	
 	
-	  <Link to = '/Profile/newRequest'><button className = "profileButton" onClick ={getHospitals} >New Request</button></Link>
+	  <Link style={{textDecoration: 'none'}} to = '/Profile/newRequest'><Button variant='contained' className = "profileButton" onClick ={getHospitals} >New Request</Button></Link>
 	
 		
-	  <Link to = '/Profile/myRequests'><button className = "profileButton">My Requests</button></Link>
+	  <Link style={{textDecoration: 'none'}} to = '/Profile/myRequests'><Button variant='contained' className = "profileButton">My Requests</Button></Link>
 	
 	
-	  <Link to = '/Profile/matchedRequests'><button className = "profileButton">Matched Requests</button></Link>	
+	  <Link style={{textDecoration: 'none'}} to = '/Profile/matchedRequests'><Button variant='contained' className = "profileButton">Matched Requests</Button></Link>	
 	
 	 </div>
 
 	<div id = "userInformation">
-	<img id="profileImage" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+	<Avatar id="profileImage"  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
 	<h2 id ="userName">{JSON.parse(localStorage.getItem('user')).fullName}<hr id="namehr"></hr></h2>
 	<h2 id ="userblood">{JSON.parse(localStorage.getItem('user')).bloodType}</h2>
 	

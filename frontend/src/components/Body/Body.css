@@ -1,16 +1,7 @@
-.donate{
-    border: none;
-    color: white;
-    text-align: center;
-    margin: 4px 2px;
-    opacity: 0.6;
-    transition: 0.3s;
-    background-color: #e11e25;
-    padding: 10px 20px;
-    font-size: 13px;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-}.donate:hover {
-    opacity: 1;
+.Body{
+    position: relative;
+    top:100px;
+    left:200px;
+    background-image: './../../146-1468221_blood-donation-blood-donation-with-a-transparent-background.png';
+
 }

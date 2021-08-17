@@ -124,6 +124,33 @@ const Register = () => {
         </p>
         <br />
         <br />
+        <TextField
+          className="inputs"
+          variant="filled"
+          type="text"
+          label="Location"
+          onChange={(e) => registerContext.setLocation(e.target.value)}
+        />
+		
+		
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        <Select
+        value='' displayEmpty
+          className="inputs"
+          variant="filled"
+          type="text"
+          onChange={(e) => registerContext.setBloodType(e.target.value)}
+        >
+			 <MenuItem value="">Choose    Blood    Type</MenuItem>
+		   <MenuItem value="AB+">AB+</MenuItem>
+		   <MenuItem value="AB-">AB-</MenuItem>
+		   <MenuItem value="A+">A+</MenuItem>
+		   <MenuItem value="A-">A-</MenuItem>
+		   <MenuItem value="B+">B+</MenuItem>
+		   <MenuItem value="B-">B-</MenuItem>
+		   <MenuItem value="O+">O+</MenuItem>
+		   <MenuItem value="O-">O-</MenuItem>
+	   </Select>
         <br />
       </div>
     </>
