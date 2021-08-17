@@ -16,7 +16,7 @@ const CandidatesRouter = require("./routers/routes/candidates")
 app.use(express.json());
 
 //third-party middleware
-app.use(cors());
+app.use(cors()); 
 
 
 

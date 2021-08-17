@@ -60,11 +60,11 @@ return(
     <div className="h1">
     <div className="form">
     <p>Login:</p>
-    <TextField className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
+    <TextField  className="sections"  id="outlined-basic" variant="outlined" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
         <br/>
-    <TextField className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
+    <TextField className="sections" id="outlined-basic" variant="outlined" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
-   
+
 
 
 <button className="signUp" onClick={login}>

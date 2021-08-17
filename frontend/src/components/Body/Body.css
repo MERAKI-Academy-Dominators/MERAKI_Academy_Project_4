@@ -1,0 +1,16 @@
+.donate{
+    border: none;
+    color: white;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    background-color: #e11e25;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}.donate:hover {
+    opacity: 1;
+}
