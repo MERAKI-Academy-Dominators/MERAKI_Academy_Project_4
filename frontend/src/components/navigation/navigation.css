@@ -1,0 +1,16 @@
+
+.om_profile {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.clickOm span:hover {
+    cursor: pointer;
+    color: red;
+}
+

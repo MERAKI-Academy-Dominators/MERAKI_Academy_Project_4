@@ -1,39 +1,42 @@
 #MyRequset3{
     display: grid;
-  grid-template-columns: 430px 430px 430px ;
-  grid-template-rows: 125px 125px 125px ;
-  gap: 10px;
+    grid-template-columns: 370px 370px 370px 370px;
+    grid-template-rows: 160px 160px 160px 160px ;
+    gap: 10px;
     
 }
 
 
 .ConCandidates{
-    background-color: rgb(245, 49, 65);
-    height: 110px;
-    width: 420px;
+    background-color: rgb(189, 189, 189);
+    height: 150px;
+    
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-size: medium;
 }
 
 #fullName1{
-    position: absolute;
-    top: 0;
-    left : 10px ;
-    color:black;
+    font-size: 1.4em ;
+  position: absolute;
+  top: 1%;
+  left : 5% ;
+  color: rgb(129, 3, 3);
 
 }
 
 #bloodType1{
+    font-size: 1.4em ;
     position: absolute;
-    top: 50px;
-    left : 30px ;
-    color:black;
+    top: 25%;
+     left : 5% ;
+     color: rgb(129, 3, 3);
 }
 
 #phoneNumber1{
+    font-size: 1.4em ;
     position: absolute;
-    top: 0;
-    left : 275px ;
-    color: black;
+    top: 50%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
