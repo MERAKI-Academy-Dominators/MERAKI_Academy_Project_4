@@ -1,19 +1,55 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
-import { ButtonGroup } from "@material-ui/core";
 import AppBar from '@material-ui/core/AppBar'
 import ToolBar from '@material-ui/core/ToolBar'
-import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/core/Menu'
-import {TextField, Select ,MenuItem} from "@material-ui/core";
 import "fontsource-roboto";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import "./navigation.css"
+import { makeStyles } from "@material-ui/core";
 
-function Navigation() {
+const useStyles = makeStyles(() =>({
+  profile:{
+    color: '#D5D5D5', 
+    position:"absolute",
+    left: "85%",
+    
+  },
+  logOut: {
+    color :'#D5D5D5',
+    "&:hover": {
+      color: 'black'
+    }
+  },
+  profileIcon:{
+    color :'#D5D5D5',
+    paddingTop:"20px",
+    "&:hover": {
+      color: "black"
+    }
+  }
+
+}))
+
+
+function Navigation({login,setLogin}) {
+
+  const classes = useStyles();
+  
+   useEffect(() => {
+     if(localStorage.getItem("user")){
+      setLogin(true)
+     }
+   })
+  
+  
+
+
+
   return (
-	  <>
-	 
-   <AppBar className='AppBar' color='secondary'>
+	  <div >
+	  
+    <AppBar className='AppBar' color='secondary'>
 		<ToolBar>
 	  <Link style={{textDecoration: 'none'}} to="/">
           <Button variant="contained"  size='medium'>
@@ -43,10 +79,45 @@ function Navigation() {
           About us
         </Button>
         </Link>
+
+        {login ? <span className={classes.profile}>
+
+         <span className="om_profile">
+          <Link
+            style={{ textDecoration: "none", color: "white" }}
+            to="/Profile"
+          >
+            <span className={classes.profileIcon}  >
+            <AccountCircleIcon fontSize="large" id="profile_icon" />  
+            </span>
+          </Link>
+
+          <Link style={{ textDecoration: "none", color: "white" }} to="/">
+            <span onClick={()=>{localStorage.clear();setLogin(false)}} className={classes.logOut} >
+              Logout
+            </span>
+          </Link>
+
+         </span>
+
+        </span> : null }
+
 			</ToolBar>
+      
+      
       </AppBar>	
 
-	</>
+      
+
+
+      
+        
+       
+      
+
+      
+
+	</div>
   );
 }
 

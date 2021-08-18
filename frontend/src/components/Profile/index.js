@@ -6,12 +6,8 @@ import MatchedRequests from './../../components/MatchedRequests/index';
 import EditProfile from './../../components/EditProfile/index';
 import MyRequests from './../../components/MyRequests/index';
 import ConfirmedCandidates from './../MyRequests/ConfirmedCandidates';
-import Grid from "@material-ui/core/Grid";
 import axios from 'axios';
 import './Profile.css'
-import ToolBar from '@material-ui/core/ToolBar'
-import MenuIcon from '@material-ui/core/Menu'
-import { ButtonGroup } from '@material-ui/core';
 import "./../MyRequests/MyRequest.css"
 import Avatar from '@material-ui/core/Avatar';
 
@@ -27,7 +23,7 @@ const Profile = () => {
 
 
 	   return (
-	
+	   <div id="allProfile">
 		<div id = "profile">
 
 	
@@ -47,7 +43,7 @@ const Profile = () => {
 	 </div>
 
 	<div id = "userInformation">
-	<Avatar id="profileImage"  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+	<img id="profileImage"  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
 	<h2 id ="userName">{JSON.parse(localStorage.getItem('user')).fullName}<hr id="namehr"></hr></h2>
 	<h2 id ="userblood">{JSON.parse(localStorage.getItem('user')).bloodType}</h2>
 	
@@ -69,6 +65,7 @@ const Profile = () => {
 	</div>
 
 
+	</div>
 	</div>
 
 

@@ -14,9 +14,9 @@ const ConfirmedCandidates = ({
    <div id="MyRequset3">
       <div className="ConCandidates">
         <div id="candidate">
-          <h2 id="fullName1"> {fullName}</h2>
-          <h2 id="bloodType1"> {bloodType}</h2>
-          <h3 id="phoneNumber1"> {phoneNumber}</h3>
+          <p id="fullName1" ><strong>Name : </strong>{fullName}</p>
+          <p id="bloodType1" ><strong>BloodType : </strong>{bloodType}</p>
+          <p id="phoneNumber1" ><strong>PhoneNumber : </strong>{phoneNumber}</p>
         </div>
       </div>
       </div>
