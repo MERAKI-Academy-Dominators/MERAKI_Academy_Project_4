@@ -17,14 +17,15 @@ import About from './components/About/index';
 
 function App() {
 
+	const [login , setLogin] = useState()
 	return <div className="App">
 		
 		<Header/>
-		<Navigation />
+		<Navigation setLogin={setLogin} login={login}  />
 		<Switch>
-		<Route exact path= "/" render={()=> <Body />}/> 
+		<Route exact path= "/" render={()=> <Body login={login} />}/> 
 		<Route path= "/Register" render={()=> <Register/>}/> {/*createNewUser*/}
-		<Route path= "/Login" render={()=> <Login/>}/> {/*login*/}
+		<Route path= "/Login" render={()=> <Login setLogin={setLogin} />}/> {/*login*/}
 		<Route path= "/WhyGiveBlood" render={()=> <ReasonsInfo/>}/> {/*React Paragraphs*/}
 		<Route path= "/WhoCanGiveBlood" render={()=> <GivingInfo/>}/> {/*React Paragraphs*/}
 		<Route path= "/DonationProcess" render={()=> <DonationProcess/>}/> {/*React headers and Paragraphs*/}

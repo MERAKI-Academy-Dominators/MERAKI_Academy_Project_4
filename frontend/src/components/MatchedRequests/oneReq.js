@@ -3,6 +3,8 @@ import "./MatchedRequests.css";
 import axios from "axios";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import CheckIcon from '@material-ui/icons/Check';
+import ClearIcon from '@material-ui/icons/Clear';
 
 
 function OneReq({fullName , hospital , phone ,date, location , bloodType, reqId, getMatched} ) {
@@ -22,14 +24,14 @@ function OneReq({fullName , hospital , phone ,date, location , bloodType, reqId,
         
             
         <div id="OneReq">
-            <h2 id="fullname">{fullName}</h2>
-            <h2 id="bloodtype">{bloodType}</h2>
-            <h3 id="hospital">{hospital}</h3>
-            <h3 id="phone">{phone}</h3>
-            <h3 id="location">{location}</h3>
-            <h3 id="date">{date}</h3>
-            <button id="dec">decline</button>
-            <button id="conf" onClick= {confirmRequest} >confirm</button>
+             <p id="fullname" ><strong>Name : </strong>{fullName}</p>
+             <p id="bloodtype" ><strong>BloodType : </strong>{bloodType}</p>
+             <p id="hospital" ><strong>Hospital : </strong>{hospital}</p>
+             <p id="phone" ><strong>Phone : </strong>{phone}</p>
+             <p id="location" ><strong>Location : </strong>{location}</p>
+             <p id="date" ><strong>Date : </strong>{date.slice(0,10)}</p>
+            <ClearIcon id="dec"/>
+            <CheckIcon id="conf" onClick= {confirmRequest} />
             
 
 

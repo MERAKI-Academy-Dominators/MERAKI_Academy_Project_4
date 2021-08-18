@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./MyRequest.css";
 import axios from "axios";
 import Button from '@material-ui/core/Button';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+
 
 
 const RequestCard = ({
@@ -45,20 +48,19 @@ const RequestCard = ({
     
      
        <div id = "RequestCard5">
-          <h3 id="blood5">{bloodType}</h3>
-          <h3 id="hosp5">{hospital}</h3>
-          <h3 id="mydate5">{date}</h3>
-          <button variant="contained" color="red"
+          <p id="blood5" ><strong>BloodType : </strong>{bloodType}</p>
+          <p id="hosp5" ><strong>Hospital : </strong>{hospital}</p>
+          <p id="mydate5" ><strong>Date : </strong>{date.slice(0,10)}</p>
+          
+          <LocalHospitalIcon
             onClick={() => {
               getConCandidates();
             }}
             id="candidates"
-          >
-            candidates
-          </button>
-          <button   onClick={deleteRequest} id="delete">
-            delete
-          </button>
+          />
+          
+          <DeleteForeverIcon   onClick={deleteRequest} id="delete"/>
+         
           </div>
       
   );
