@@ -3,8 +3,8 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div>
-      <h1>Welcome, Donor!</h1>
+    <div className="aaabout">
+      <h1 className="DONORR">Welcome, Donor!</h1>
       <p>
         This website exists to help people realize their life-transforming
         potential by offering convenient blood donation opportunities and

@@ -72,9 +72,9 @@ return(
     Login
 </Button>
 {message}
-</div>
 <h1 className = "doYou">You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
 {toProfile?<Redirect to= '/Profile'></Redirect> :null }
+</div>
 </div>)
 }
 

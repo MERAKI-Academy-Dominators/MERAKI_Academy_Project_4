@@ -15,7 +15,7 @@ const Register = () => {
   return (
     <>
       <div className="form">
-        {/* <h1 className = 'h1'>SignUp to Donate blood and save lives </h1> */}
+        <h1 className = 'h1'>SignUp to Donate blood and save lives </h1>
         <form onSubmit={handleSubmit}>
           <TextField
             className="inputs"
@@ -91,6 +91,13 @@ const Register = () => {
           <Button variant="contained" color="secondary" onClick={handleSubmit}>
             SignUp
           </Button>
+          <p className="agreement">
+          Have an account?{" "}
+          <a className="sign" href="http://localhost:3000/Login">
+            {" "}
+            SignIn
+          </a>
+        </p>
           {registerContext.toLogIn ? <Redirect to="/Login"></Redirect> : null}
         </form>
 
@@ -115,42 +122,10 @@ const Register = () => {
           Policy .
         </p>
         <br />
-        <p className="agreement">
-          Have an account?{" "}
-          <a className="sign" href="http://localhost:3000/Login">
-            {" "}
-            SignIn
-          </a>
-        </p>
+ 
         <br />
         <br />
-        <TextField
-          className="inputs"
-          variant="filled"
-          type="text"
-          label="Location"
-          onChange={(e) => registerContext.setLocation(e.target.value)}
-        />
-		
-		
-		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-        <Select
-        value='' displayEmpty
-          className="inputs"
-          variant="filled"
-          type="text"
-          onChange={(e) => registerContext.setBloodType(e.target.value)}
-        >
-			 <MenuItem value="">Choose    Blood    Type</MenuItem>
-		   <MenuItem value="AB+">AB+</MenuItem>
-		   <MenuItem value="AB-">AB-</MenuItem>
-		   <MenuItem value="A+">A+</MenuItem>
-		   <MenuItem value="A-">A-</MenuItem>
-		   <MenuItem value="B+">B+</MenuItem>
-		   <MenuItem value="B-">B-</MenuItem>
-		   <MenuItem value="O+">O+</MenuItem>
-		   <MenuItem value="O-">O-</MenuItem>
-	   </Select>
+ 
         <br />
       </div>
     </>

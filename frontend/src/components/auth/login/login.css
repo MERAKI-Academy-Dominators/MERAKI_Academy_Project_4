@@ -6,6 +6,9 @@
     text-align: center;
     border: 1px solid #dbdbdb;
     margin-top: 150px;
+    width: 75vh;
+    margin-left: 30%;
+    height: 60vh;
 }
 .h1 {
     text-align: center;

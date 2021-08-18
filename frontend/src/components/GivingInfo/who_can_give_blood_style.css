@@ -1,16 +1,19 @@
-div {
-    padding: 10px, 10px 10px 10px;
-    margin: 10px, 10px 10px 10px;
+
+
+.WhenCanIBlood{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 150px;
+    
+}
+.A{
+    margin-left: 450px;
+    margin-top: -200px;
+}
+.AB{
+    margin-left: 450px;
+    margin-top: -185px;
+}
+.wheni{
+    margin-top: 20vh;
 }
 
-h1 {
-    color: rgb(177, 19, 19);
-}
-
-h2 {
-    color: rgb(177, 19, 19);
-}
-
-span {
-    color: rgb(177, 19, 19);
-}
