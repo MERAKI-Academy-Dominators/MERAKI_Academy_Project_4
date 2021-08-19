@@ -61,21 +61,21 @@ const login = ()=>{
 return(
     <div className="h1">
     <div className="form">
-    <h2>Login:</h2>
-    <TextField className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
+    <p>Login:</p>
+    <TextField  className="sections"  id="outlined-basic" variant="outlined" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
         <br/>
-    <TextField className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
+    <TextField className="sections" id="outlined-basic" variant="outlined" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
-   
+
 
 
 <Button className="signUp" onClick={login}>
     Login
 </Button>
 {message}
-</div>
 <h1 className = "doYou">You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
 {toProfile?<Redirect to= '/Profile'></Redirect> :null }
+</div>
 </div>)
 }
 
