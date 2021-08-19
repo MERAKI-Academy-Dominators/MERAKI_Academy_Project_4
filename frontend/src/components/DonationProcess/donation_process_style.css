@@ -1,4 +1,4 @@
-/* span {
+span {
   font-weight: bolder;
   color: rgb(177, 19, 19);
 }
@@ -39,24 +39,3 @@ li {
   padding-right: 50px;
   padding-left: 50px;
 }
-
- */
-
-
-.BloodDonation{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 150px;
-
-}
-.A{
-  margin-left: 450px;
-  margin-top: -200px;
-}
-.AB{
-  margin-left: 450px;
-  margin-top: -185px;
-}
-.procest{
-  margin-left: 10%;
-}
-

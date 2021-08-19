@@ -3,8 +3,8 @@ import "./who_can_give_blood_style.css";
 
 export default function WhenCanIBloodPage() {
   return (
-    <div className="WhenCanIBlood">
-      <h1 className="wheni">When can I give blood?</h1>
+    <div>
+      <h1>When can I give blood?</h1>
       <p>
         Sometimes it is not possible to give blood, or we may ask you to wait
         before donating again. To save you a wasted journey, please read this
