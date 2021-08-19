@@ -6,7 +6,7 @@ import login from './login.css'
 import Button from "@material-ui/core/Button";
 
 
-function Login(){
+function Login({setLogin}){
 const[email,setEmail]=useState()
 const[message,setMessage]=useState()
 const[password,setPassword]=useState()
@@ -36,6 +36,7 @@ const login = ()=>{
        `login successfully`
       );
       settoProfile(true)
+      setLogin(true)
   } 
 })
      

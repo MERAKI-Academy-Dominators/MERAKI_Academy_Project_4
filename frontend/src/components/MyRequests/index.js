@@ -3,6 +3,8 @@ import ConfirmedCandidates from "./ConfirmedCandidates"
 import axios from 'axios'
 import React,{useState , useEffect} from 'react'
 import "./MyRequest.css"
+import BackspaceIcon from '@material-ui/icons/Backspace';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Button from '@material-ui/core/Button';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -27,10 +29,10 @@ const MyRequest = () => {
     useEffect(()=>{
         
         getMyRequests()
-        console.log(conCandidates)
+        
         
 
-    },[])
+    })
 
 
 
@@ -51,7 +53,7 @@ const MyRequest = () => {
             return <ConfirmedCandidates setHideCandidates = {setHideCandidates} setConCandidates={setConCandidates}  fullName = {elem.fullName} phoneNumber={elem.phoneNumber} key={i} bloodType= {elem.bloodType} />}):null}
             
 
-            {conCandidates &&  <button id="conBack" onClick= {()=>{setConCandidates(false);setHideCandidates(true) }}>Back</button> }
+            {conCandidates &&  <ArrowBackIosIcon id="conBack" onClick= {()=>{setConCandidates(false);setHideCandidates(true) }}/> }
 
 
           

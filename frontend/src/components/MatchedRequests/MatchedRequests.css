@@ -1,7 +1,8 @@
 #Matched{
     display: grid;
-    grid-template-columns: 315px 315px 315px 315px;
-    grid-template-rows: 215px 215px 215px 215px;
+    grid-template-columns: 370px 370px 370px 370px;
+    grid-template-rows: 200px 200px 200px  ;
+    gap: 10px;
 }
 
 
@@ -13,86 +14,83 @@
 
 
 #OneReq{
-    background-color: rgb(245, 49, 65);
+    background-color: rgb(189, 189, 189);
     height: 200px;
-    width: 300px;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-size: medium;
-    color: white
 }
 
 #fullname{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:10px;
-    left: 10px;
-    color: black
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #bloodtype{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:10px;
-    left: 250px;
-    color:black
+    top: 13%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #hospital{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:50px;
-    left: 15px;
+    top: 27%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #phone{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:70px;
-    left: 15px;
+    top: 40%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #location{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:90px;
-    left: 15px;
+    top: 52%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #date{
+    font-size: 1.3em ;
     position: absolute;
-    margin: 0;
-    top:130px;
-    left: 15px;
+    top: 66%;
+    left : 5% ;
+    color: rgb(129, 3, 3);
 }
 
 #conf{
     position: absolute;
-    top:170px;
-    left: 225px;
-    background-color: #7e0d0d; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: 1px solid rgb(190, 17, 17);
+    font-size: 1.1cm;
+    top: 78%;
+    left: 89%;
+    cursor: pointer;
+    color: rgb(129, 3, 3);
 }
 
 
 #dec{
     position: absolute;
-    top:170px;
-    left: 155px;
-    background-color: #7e0d0d; /* Green */
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border: 1px solid rgb(190, 17, 17);
+    font-size: 1.1cm;
+    top: 1%;
+    left: 89%;
+    cursor: pointer;
+    color: rgb(129, 3, 3);
+}
+
+#conf:hover{
+    color: rgb(74, 74, 75);
+}
+
+#dec:hover{
+    color: rgb(74, 74, 75);
 }
