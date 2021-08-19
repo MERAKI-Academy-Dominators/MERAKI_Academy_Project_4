@@ -1,0 +1,184 @@
+.profile-information {
+    width: 65%;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center;
+    min-height: 85vh;
+}
+.reservation_Container{
+  min-height: 85vh;
+}
+.user_Business{
+  min-height: 85vh;
+}
+
+.information-edit{
+  margin: auto;
+    margin-top: 5%;
+    align-items: center;
+}
+
+#your-information{
+    text-align: center;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    font-weight: bold;
+    font-size: 30px;
+    border: 2px solid black;
+    margin: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+
+  .info p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  #email-input{
+    cursor:not-allowed
+  }
+
+  #editButton {
+margin: auto;
+float: left;
+}
+
+#addBusinessButton{
+  margin:auto;
+}
+
+.noBusiness{
+  min-height: 70vh;
+  width: 100vw;
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editForm {
+  margin-top: 2%;
+}
+
+.inf_reservation
+{
+  width: 50%;
+  height: 25%;
+  margin:auto;
+  margin-top: 50px;
+  
+}
+
+.email-edit-info {
+  margin-top: 2%;
+}
+
+.main_business{
+  display: flex;
+ 
+  justify-content: center;
+ 
+}
+
+.business_img 
+{
+  width: 60%;
+}
+
+
+.inf_business{
+  
+  width: 35%;
+}
+
+.pareants-map-desc
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 30px 0 15px 25px; 
+}
+.business_desc
+{
+  width: 60%;
+  overflow-y: auto;
+  margin-left: 25px;
+}
+.location
+{
+  width: 35%;
+}
+
+
+.Resinf_business{
+  display: grid;
+  grid-template-columns: repeat(3,1fr 1fr 2fr 1fr);
+  gap: 23px;
+  border-bottom: solid black ;
+  margin-bottom:20px ;
+  padding-bottom: 20px;
+}
+
+.image{
+ width: 100%;
+ height: 100%;
+
+}
+.Resimage{
+  width: 23vw;
+  height: 31.75vh
+}
+
+.business_info{
+  width: 100%;
+  margin-left: 25px;
+  margin-top: 50px;
+  
+}
+
+.business_info .business_info-p 
+{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  
+}
+.business_info Button
+{
+  width: 250px;
+  float: right;
+  margin-right: 20px;
+}
+
+
+.Resbusiness_desc{
+  display: flex;
+  align-items: center;
+  width: 27vw;
+  max-height: 40vh;
+}
+.Tabs-nav
+{
+  margin:18px 0 15px 35px ;
+}
+
+.no-reservation_Container {
+    
+  margin-top: 4%;
+}
+
+#text-for-no-reservation{
+font-weight: 200;
+font-size: 22px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+
+}
+
+.editForm1{
+  width: 100%;
+}

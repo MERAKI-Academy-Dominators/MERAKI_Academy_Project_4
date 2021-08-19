@@ -8,6 +8,13 @@
 
 }
 
+#Profile-edit{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    
+    width: 400px;
+}
 #newrequest{
     position: absolute;
     top: 350px;

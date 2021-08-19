@@ -2,17 +2,18 @@ import React, {useState} from 'react';
 import { Route, Link, useParams, useHistory, Switch} from 'react-router-dom';
 import './App.css';
 import 'fontsource-roboto';
-import Navigation from './components/navigation/index'
-import Header from './components/Header/index';
-import Body from './components/Body/index';
-import Footer from './components/Footer/index';
-import Register from './components/auth/signUp/index';
-import Login from './components/auth/login/index';
-import ReasonsInfo from './components/ReasonsInfo/index';
-import GivingInfo from './components/GivingInfo/index';
-import DonationProcess from './components/DonationProcess/index';
-import Profile from './components/Profile/index';
-import About from './components/About/index';
+import Navigation from './components/navigation/index.js'
+import Header from './components/Header/index.js';
+import Body from './components/Body/index.js';
+import Footer from './components/Footer/index.js';
+import Register from './components/auth/signUp/index.js';
+import Login from './components/auth/login/index.js';
+import ReasonsInfo from './components/ReasonsInfo/index.js';
+import GivingInfo from './components/GivingInfo/index.js';
+import DonationProcess from './components/DonationProcess/index.js';
+import Profile from './components/Profile/index.js';
+import About from './components/About/index.js';
+
 
 
 function App() {
