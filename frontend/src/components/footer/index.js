@@ -19,7 +19,12 @@ const Footer = () => {
             <Grid item xs={12} sm={4}>
               <Box
                 borderBottom={1}
-                style={{ fontSize: "1rem", fontWeight: "bold" }}
+                style={{
+                  fontSize: "1.3rem",
+                  fontWeight: "bolder",
+                  color: "#e0e0e0",
+                  fontFamily: "sans-serif"
+                }}
               >
                 Help
               </Box>
@@ -27,7 +32,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Support
                 </Link>
@@ -36,7 +47,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Contact us
                 </Link>
@@ -45,7 +62,12 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",                   fontFamily: "sans-serif"
+                  }}
                 >
                   Terms of Service
                 </Link>
@@ -54,7 +76,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Cookies Policy
                 </Link>
@@ -63,7 +91,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Data Policy
                 </Link>
@@ -73,7 +107,12 @@ const Footer = () => {
             <Grid item xs={12} sm={4}>
               <Box
                 borderBottom={1}
-                style={{ fontSize: "1rem", fontWeight: "bold" }}
+                style={{
+                  fontSize: "1.3rem",
+                  fontWeight: "bolder",
+                  color: "#e0e0e0",
+                  fontFamily: "sans-serif"
+                }}
               >
                 Account
               </Box>
@@ -81,7 +120,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Account
                 </Link>
@@ -90,7 +135,13 @@ const Footer = () => {
                 <Link
                   href="/Login"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Log In
                 </Link>
@@ -99,7 +150,13 @@ const Footer = () => {
                 <Link
                   href="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Register
                 </Link>
@@ -109,7 +166,12 @@ const Footer = () => {
             <Grid item xs={12} sm={4}>
               <Box
                 borderBottom={1}
-                style={{ fontSize: "1rem", fontWeight: "bold" }}
+                style={{
+                  fontSize: "1.3rem",
+                  fontWeight: "bolder",
+                  color: "#e0e0e0",
+                  fontFamily: "sans-serif"
+                }}
               >
                 Donate
               </Box>
@@ -117,7 +179,13 @@ const Footer = () => {
                 <Link
                   href="/WhoCanGiveBlood"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Frequently Asked
                 </Link>
@@ -126,7 +194,13 @@ const Footer = () => {
                 <Link
                   href="/Register"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Find Blood
                 </Link>
@@ -135,7 +209,13 @@ const Footer = () => {
                 <Link
                   to="/"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Donation Process
                 </Link>
@@ -144,7 +224,13 @@ const Footer = () => {
                 <Link
                   href="https://www.save.life/corona"
                   color="inherit"
-                  style={{ fontSize: "0.8rem", cursor: "pointer" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    color: "#e0e0e0",
+                    fontFamily: "sans-serif"
+                  }}
                 >
                   Corona Virus Live Tracker
                 </Link>
@@ -156,7 +242,10 @@ const Footer = () => {
             style={{
               display: "flex",
               justifyContent: "flex-end",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
+              fontWeight: "bold",
+              color: "#e0e0e0",
+              fontFamily: "sans-serif"
             }}
           >
             <Link color="inherit" href="https://www.facebook.com">
@@ -178,9 +267,11 @@ const Footer = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
+              fontWeight: "bold",
+              color: "#e0e0e0",
+              fontFamily: "sans-serif"
             }}
-
             borderTop={1}
           >
             <br />
