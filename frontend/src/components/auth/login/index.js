@@ -31,6 +31,7 @@ const login = ()=>{
 
     if (res.status == 200) {
         localStorage.setItem("user" , JSON.stringify(res.data))
+        localStorage.setItem("user_image" , JSON.stringify({userImage:"https://pbs.twimg.com/profile_images/740272510420258817/sd2e6kJy.jpg"}))
       setMessage(
        `login successfully`
       );
