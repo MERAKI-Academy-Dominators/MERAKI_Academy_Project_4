@@ -10,7 +10,7 @@ export default function DonationProcess() {
       <br />
       <br />
       <br />
-      <h1 className="procest">Donation process</h1>
+      <h1>Donation process</h1>
       <br />
       <BeforeBloodDonationPage/>
       <hr/>
