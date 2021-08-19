@@ -1,5 +1,5 @@
 .footer{
-
+    background-color: lightgray;
     position:relative;
-    bottom:1px;
+    width: 100vw;
 }
