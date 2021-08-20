@@ -12,6 +12,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
+    <div className="footeer">
     <footer className="footer">
       <Box>
         <Container>
@@ -280,6 +281,7 @@ const Footer = () => {
         </Container>
       </Box>
     </footer>
+    </div>
   );
 };
 

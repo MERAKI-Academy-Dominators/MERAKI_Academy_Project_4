@@ -60,7 +60,7 @@ const EditProfile = () => {
       {JSON.parse(localStorage.getItem("user")) ? (
         <div className="your-information">
           <p
-            className="login_text"
+            className="login_text1"
             style={{ fontFamily: "Arial, Helvetica, sans-serif" }}
           >
             Edit Your Info...
@@ -150,8 +150,8 @@ const EditProfile = () => {
             <MenuItem value="O-">O-</MenuItem>
           </TextField>
           <br />
-          <br />
-          <div>
+          
+          <div className="singUpButton1">
             <Button className="singUpButton1" onClick={setUserInformation}>
               Update Your Info
             </Button>{" "}

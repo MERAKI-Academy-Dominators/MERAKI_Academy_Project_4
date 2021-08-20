@@ -71,10 +71,7 @@ const Profile = () => {
       </div>
 
       <div id="mainSpace">
-        <div id="Profile-edit">
-          <Route path="/Profile/edit" render={() => <EditProfile />} />{" "}
-          {/*not implemented yet*/}
-        </div>
+       
         <div id="newrequest">
           <Route
             path="/Profile/newRequest"
@@ -82,7 +79,10 @@ const Profile = () => {
           />{" "}
           {/*React (Button :- createRequest + List of options :- getAllHospitals + List of options :- BloodTypes)*/}
         </div>
-
+ <div id="Profile-edit">
+          <Route path="/Profile/edit" render={() => <EditProfile />} />{" "}
+          {/*not implemented yet*/}
+        </div>
         <div id="myrequest1">
           <Route path="/Profile/myRequests" render={() => <MyRequests />} />{" "}
           {/*getUserRequests* + React (Button :- deleteUserRequests + Button :- updateUserRequests*/}
