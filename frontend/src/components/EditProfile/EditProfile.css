@@ -4,9 +4,12 @@
     margin-top: 5%;
     align-items: center;
     min-height: 85vh;
+    
+    z-index: 10;
 }
 .reservation_Container{
   min-height: 85vh;
+ 
 }
 .user_Business{
   min-height: 85vh;

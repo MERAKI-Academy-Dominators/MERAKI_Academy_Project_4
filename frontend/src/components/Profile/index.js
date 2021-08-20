@@ -76,7 +76,7 @@ const Profile = () => {
           {/*not implemented yet*/}
         </div>
         <div id="newrequest">
-          <Route
+          <Route 
             path="/Profile/newRequest"
             render={() => <NewRequest hospitals={hospitals} />}
           />{" "}
