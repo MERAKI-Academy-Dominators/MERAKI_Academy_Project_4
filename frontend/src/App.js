@@ -32,6 +32,7 @@ function App() {
 		<Route path= "/Profile" render={()=> <Profile/>}/> {/*React */}
 		<Route path= "/About" render={()=> <About/>}/> {/*React Paragraph*/}
 		</Switch>
+		<Footer />
 		
 	</div>;
 };
