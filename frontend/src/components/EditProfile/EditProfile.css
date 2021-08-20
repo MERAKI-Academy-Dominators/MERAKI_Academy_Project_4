@@ -185,3 +185,13 @@ text-align: center;
 .editForm1{
   width: 100%;
 }
+.login_text1{
+margin: 0px 0px;
+font-size: 15px;
+font-weight: bold;
+}
+.singUpButton1{
+ margin-left: 50px;
+ margin-top: 10px;
+
+}
