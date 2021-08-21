@@ -1,4 +1,4 @@
-<h3 align="center">Life Stream</h3>
+<h1 align="center">Life Stream</h1>
 
 <p align="center">Life Stream is an online platform for blood donation. Our aim is to ease the process of requesting blood units on recipients, and the process of reaching out for blood donation on donors.<br /></p>
 
