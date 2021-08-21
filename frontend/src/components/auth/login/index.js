@@ -60,22 +60,28 @@ const login = ()=>{
 
 return(
     <div className="h1">
-    <div className="form">
-    <h2>Login:</h2>
-    <TextField className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
+    <div   className="form">
+    <h2>Login</h2>
+    <TextField  variant="filled" className="sections" type="text" label ='Email'  onChange={(a)=>{setEmail(a.target.value)}}/>
         <br/>
-    <TextField className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
+    <TextField   variant="filled" className="sections" type="password" label='Password'  onChange={(a)=>{setPassword(a.target.value)}}/>
         <br/>
-   
+        <br/>
 
 
-<Button className="signUp" onClick={login}>
+<Button  variant="contained"  className="signUp" onClick={login}>
     Login
 </Button>
-{message}
-</div>
-<h1 className = "doYou">You don't have account ? <Link to = '/Register'>Sign up here</Link></h1>
+<br/>
+<br/>
+<div >
+<p id="agreement"> {message}</p>
+<p id = "agreement">You don't have account ? <Link className="sign"  to = '/Register'>Sign up here</Link></p>
 {toProfile?<Redirect to= '/Profile'></Redirect> :null }
+</div>
+
+</div>
+
 </div>)
 }
 
