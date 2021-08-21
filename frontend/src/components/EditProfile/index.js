@@ -66,6 +66,7 @@ const EditProfile = () => {
             Edit Your Info...
           </p>{" "}
           <TextField
+           variant="filled"
             className="editForm1"
             placeholder={`${JSON.parse(localStorage.getItem("user")).email}`}
             type="email"
@@ -76,6 +77,7 @@ const EditProfile = () => {
           ></TextField>
           <br />
           <TextField
+           variant="filled"
             className="editForm1"
             placeholder={` ${
               JSON.parse(localStorage.getItem("user")).fullName
@@ -90,6 +92,7 @@ const EditProfile = () => {
           />
           <br />
           <TextField
+           variant="filled"
             className="editForm1"
             placeholder={` ${
               JSON.parse(localStorage.getItem("user")).phoneNumber
@@ -103,6 +106,7 @@ const EditProfile = () => {
           />
           <br />
           <TextField
+           variant="filled"
             className="editForm1"
             label="Address "
             placeholder={` ${JSON.parse(localStorage.getItem("user")).address}`}
@@ -114,6 +118,7 @@ const EditProfile = () => {
           />
           <br />
           <TextField
+           variant="filled"
             className="editForm1"
             label="Profile Pic Link"
             placeholder={` ${
@@ -128,6 +133,7 @@ const EditProfile = () => {
           />
           <br />
           <TextField
+           variant="filled"
             select
             className="editForm1"
             as="select"
@@ -152,7 +158,7 @@ const EditProfile = () => {
           <br />
           
           <div className="singUpButton1">
-            <Button className="singUpButton1" onClick={setUserInformation}>
+            <Button  variant="contained" className="singUpButton1" onClick={setUserInformation}>
               Update Your Info
             </Button>{" "}
           </div>

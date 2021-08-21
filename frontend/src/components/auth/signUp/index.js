@@ -14,8 +14,10 @@ const Register = () => {
 
   return (
     <>
-	<div className="form">
-{/* <h1 className = 'h1'>SignUp to Donate blood and save lives </h1> */}
+    <div className = 'minHi'>
+	<div className="form1">
+<h1 className = 'h11'>SignUp<br/> to Donate blood and save lives </h1>
+<br />
       <form onSubmit={handleSubmit}>
         <TextField
           className="inputs"
@@ -74,10 +76,13 @@ const Register = () => {
         />
 		
 		
-		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
-        <Select
-        value='' displayEmpty
-          className="inputs"
+		&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+        <TextField
+          className="inputs1"
+         
+        select
+        label="Blood Type"
+          
           variant="filled"
           type="text"
           onChange={(e) => registerContext.setBloodType(e.target.value)}
@@ -91,11 +96,11 @@ const Register = () => {
 		   <MenuItem value="B-">B-</MenuItem>
 		   <MenuItem value="O+">O+</MenuItem>
 		   <MenuItem value="O-">O-</MenuItem>
-	   </Select>
+	   </TextField>
         <br />
 		<br />
 		<br />
-		<Button variant="contained" color="secondary" onClick ={handleSubmit}>
+		<Button variant="contained"  onClick ={handleSubmit}>
  SignUp
 </Button>
         {registerContext.toLogIn ? <Redirect to="/Login"></Redirect> : null}
@@ -116,12 +121,13 @@ const Register = () => {
         ""
       )}
 	   <p className="agreement" >By signing up, you agree to our Terms ,<br/> Data Policy and Cookies Policy .</p>
-		 <br />
+	
 		 <p className="agreement" >Have an account? <a className="sign" href="http://localhost:3000/Login"> SignIn</a></p> 
 		 <br />
 	    <br />  
 		<br />
 		</div>
+    </div>
     </>
   );
 };
